@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container content valign-wrapper center">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="col s12">
+            <i class="white-text material-icons">adjust</i>
+            <br>
+            <span class="white-text"><b>TYPTO</b></span>
+          </div>
+        </div>
+        <div class="row"><div class="col s12"><hr></div></div>
+        <br>
+        <div class="row">
+          <div class="input-field col offset-s2 s8">
+            <div class="row">
+              <label for="receiver-id">Enter NEAR account to tip</label>
+              <input class="validate center-align white-text" placeholder="example.near" id="receiver-id" type="text">
+            </div>
+            <div class="row">
+              <label for="amount">Tip Amount (In NEAR)</label>
+              <input placeholder="1" id="amount" type="number" class="validate center-align white-text">
+            </div>
+              <a id="sign-in" class="waves-effect waves-light white black-text btn">Sign In with NEAR to Tip</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/near-api-js@0.41.0/dist/near-api-js.min.js"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
